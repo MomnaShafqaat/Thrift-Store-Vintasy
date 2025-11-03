@@ -1,0 +1,144 @@
+/* General Body Styling */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #4e1c1c;
+}
+
+.navbar-brand,
+.nav-link,
+.btn {
+    color: #fff !important;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background: url('https://via.placeholder.com/1200x600') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero-section .hero-content {
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Enhanced background visibility */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Categories Section */
+.category-box {
+    text-align: center;
+    background-color: #cae2a4;
+    border: 1px solid #c9de97;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 300px; /* Fixed height for category boxes */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.category-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the div without distorting */
+    border-radius: 10px;
+    display: block;
+}
+
+.category-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.category-box h5 {
+    margin-top: 10px;
+    font-weight: normal;
+    color: #6c5c45;
+    font-size: 1.25rem;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #4e1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.price-btn-container {
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    text-align: center;
+    margin: 10px;
+}
+
+.price-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers text both horizontally and vertically */
+    padding: 0; /* Remove padding as we're using fixed width/height */
+    background-color: #f1c40f;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100px; /* Set width */
+    height: 100px; /* Set height for a square shape */
+    font-size: 14px; /* Adjust text size to fit inside the square */
+}
+
+.price-btn:hover {
+    background-color: #d4ac0d;
+}
+
+.custom-price input[type="number"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80px;
+}
+
+.custom-price button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-price button[type="submit"]:hover {
+    background-color: #d35400;
+}
